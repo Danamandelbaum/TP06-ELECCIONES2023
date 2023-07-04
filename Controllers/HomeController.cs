@@ -15,8 +15,25 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        var partidos = BD.listarPartidos();
+        ViewBag.partidos = partidos;
+        return View("Index");
     }
+
+    public IActionResult verDetallePartido(int idPartido)
+    {
+        var datosPartido = BD.verInfoPartido(idPartido);
+        ViewBag.datosPartido = datosPartido;
+        return View("verDetallePartido");
+    }
+
+       public IActionResult verDetalleCandidato(int idCandidato)
+    {
+        var datosCandidato = BD.verInfoPartido(idCandidato);
+        ViewBag.datosCandidato = datosCandidato;
+        return View("verDetallePartido");
+    }
+
 
     public IActionResult Privacy()
     {
