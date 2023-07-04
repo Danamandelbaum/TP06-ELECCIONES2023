@@ -7,4 +7,9 @@
     <RootNamespace>TP06_Elecciones2023</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="dapper" Version="2.0.143" />
+    <PackageReference Include="System.data.sqlclient" Version="4.8.5" />
+  </ItemGroup>
+
 </Project>
