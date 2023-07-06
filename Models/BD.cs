@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 
 public static class BD
 {
-    private static string _connectionString = @"ServeName=localhost;Database=BDELECCIONES2023; trusted_connection = True;";
+    private static string _connectionString = @"ServeName = localhost; Database=BDELECCIONES2023; trusted_connection = True;";
 
     public static void agregarCandidato(Candidato can)
     {

@@ -34,7 +34,37 @@ public class HomeController : Controller
         return View("verDetallePartido");
     }
 
+        public IActionResult agregarCandidato(int idPartido)
+    {
+        ViewBag.IdPartido = idPartido;
+        return View("agregarCandidato");
+    }
 
+    [HttpPost] IActionResult guardarCandidato(Candidato can)
+    {
+        BD.agregarCandidato(can);
+        return RedirectToAction("VerDetallePartido", new { idPartido = can.idPartido });
+        return View("guardarCandidato");
+    }
+
+    IActionResult eliminarCandidato(int idCandidato, int idPartido)
+    {
+        BD.eliminarCandidato(idCandidato);
+        return RedirectToAction("VerDetallePartido", new { idPartido = idPartido });
+        return View(eliminarCandidato);
+    }
+
+    IActionResult elecciones()
+    {
+        return View("elecciones");
+    }
+
+    IActionResult creditos()
+    {
+        return View("creditos");
+    }
+    
+  
     public IActionResult Privacy()
     {
         return View();
