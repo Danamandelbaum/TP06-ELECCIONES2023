@@ -15,23 +15,21 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var partidos = BD.listarPartidos();
-        ViewBag.partidos = partidos;
+        ViewBag.listarPartidos = BD.listarPartidos();
         return View("Index");
     }
 
     public IActionResult verDetallePartido(int idPartido)
     {
-        var datosPartido = BD.verInfoPartido(idPartido);
-        ViewBag.datosPartido = datosPartido;
+        ViewBag.datosPartido = BD.verInfoPartido(idPartido);
+        ViewBag.listarCandidatos = BD.listarCandidatos(idPartido);
         return View("verDetallePartido");
     }
 
        public IActionResult verDetalleCandidato(int idCandidato)
     {
-        var datosCandidato = BD.verInfoPartido(idCandidato);
-        ViewBag.datosCandidato = datosCandidato;
-        return View("verDetallePartido");
+        ViewBag.datosCandidato = BD.verInfoCandidato(idCandidato);
+        return View("verDetalleCandidato");
     }
 
         public IActionResult agregarCandidato(int idPartido)
@@ -40,28 +38,26 @@ public class HomeController : Controller
         return View("agregarCandidato");
     }
 
-    [HttpPost] IActionResult guardarCandidato(Candidato can)
+    [HttpPost] public IActionResult guardarCandidato(Candidato can)
     {
         BD.agregarCandidato(can);
-        return RedirectToAction("VerDetallePartido", new { idPartido = can.idPartido });
-        return View("guardarCandidato");
+        return RedirectToAction("verDetallePartido", new { idPartido = can.idPartido });
     }
 
     IActionResult eliminarCandidato(int idCandidato, int idPartido)
     {
         BD.eliminarCandidato(idCandidato);
-        return RedirectToAction("VerDetallePartido", new { idPartido = idPartido });
-        return View(eliminarCandidato);
+        return RedirectToAction("verDetallePartido", new { idPartido = idPartido });
     }
 
-    IActionResult elecciones()
+    public IActionResult Elecciones()
     {
-        return View("elecciones");
+        return View("Elecciones");
     }
 
-    IActionResult creditos()
+    public IActionResult Creditos()
     {
-        return View("creditos");
+        return View("Creditos");
     }
     
   

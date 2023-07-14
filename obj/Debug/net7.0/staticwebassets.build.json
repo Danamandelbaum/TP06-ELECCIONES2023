@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nAkR9v0oDY4pXAaVkp9/pQuEvlMovbmq5Hwur+SWjiI=",
+  "Hash": "FqaQpEwKI/Rv7pa/J5mbhpjbtswauidburxV7EkkNq0=",
   "Source": "TP06-Elecciones2023",
   "BasePath": "_content/TP06-Elecciones2023",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP06-Elecciones2023.bundle.scp.css"
     },
     {
+      "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\BD_Elecciones.sql",
+      "SourceId": "TP06-Elecciones2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\",
+      "BasePath": "_content/TP06-Elecciones2023",
+      "RelativePath": "BD_Elecciones.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\BD_Elecciones.sql"
+    },
+    {
       "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\css\\site.css",
       "SourceId": "TP06-Elecciones2023",
       "SourceType": "Discovered",
@@ -68,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\elecciones.webp",
+      "SourceId": "TP06-Elecciones2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\",
+      "BasePath": "_content/TP06-Elecciones2023",
+      "RelativePath": "elecciones.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\elecciones.webp"
+    },
+    {
       "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\favicon.ico",
       "SourceId": "TP06-Elecciones2023",
       "SourceType": "Discovered",
@@ -83,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\IMG\\bandera Arg.png",
+      "SourceId": "TP06-Elecciones2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\",
+      "BasePath": "_content/TP06-Elecciones2023",
+      "RelativePath": "IMG/bandera Arg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\bandera Arg.png"
+    },
+    {
+      "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\IMG\\Thumbs.db",
+      "SourceId": "TP06-Elecciones2023",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\",
+      "BasePath": "_content/TP06-Elecciones2023",
+      "RelativePath": "IMG/Thumbs.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\Thumbs.db"
     },
     {
       "Identity": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\js\\site.js",

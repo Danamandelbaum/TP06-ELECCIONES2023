@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "verDetallePartido";
+}
+
+<h3>Nombre: @ViewBag.datosPartido.nombre</h3> 
+<p>Logo: <img src="@ViewBag.datosPartido.logo" /></p> 
+<p>Sitio Web: <a href="@ViewBag.datosPartido.sitioWeb">@ViewBag.datosPartido.sitioWeb</a></p> 
+<p>Fecha de Fundación: @ViewBag.datosPartido.fechaFundacion</p> 
+<p>Cantidad de Diputados: @ViewBag.datosPartido.cantidadDiputados</p> 
+<p>Cantidad de Senadores: @ViewBag.datosPartido.cantidadSenadores</p> 
+<h2>Candidatos</h2> 
+@foreach (Candidato candidato in ViewBag.listarCandidatos) 
+{ <div class="card"> <img src="@candidato.foto" /> 
+<h3>@candidato.nombre</h3>
+ <p>@candidato.apellido</p> 
+ <a href='@Url.Action("verDetalleCandidato", new{idCandidato = @candidato.idCandidato})'>Ver Detalle</a> 
+ </div> } 
+ <p><a href='@Url.Action("agregarCandidato", new{IdPartido=@ViewBag.datosPartido.idPartido})'>Agregar Candidato</a></p>
+
+  

@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "verDetalleCandidato";
+}
+
+ { <div class="card"> 
+    <h3>@ViewBag.datosCandidato.nombre</h3>
+    <img src="@ViewBag.datosCandidato.foto"/> 
+    <p>@ViewBag.datosCandidato.apellido</p> 
+    <p>Fecha de Nacimiento: @ViewBag.datosCandidato.fechaNacimiento</p> 
+    <p>Postulación: @ViewBag.datosCandidato.postulacion</p>
+   </div> 
+}

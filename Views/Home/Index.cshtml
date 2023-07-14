@@ -1,8 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Index";
 }
+<header>
+<h1>Partidos políticos 2023</h1>
+<h3>Bienvenido a la página oficial de los candidatos para las Elecciones Argentinas 2023. A continuación, los partidos políticos: </h3>
+</header>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach (Partido partido in ViewBag.listarPartidos)
+ { <div class="card"> 
+    <img src="@partido.logo"/> 
+    <h3>@partido.nombre</h3> 
+    <a href='@Url.Action("VerDetallePartido", new { idPartido = @partido.idPartido })'>Ver Detalles</a> 
+   </div> 
+}

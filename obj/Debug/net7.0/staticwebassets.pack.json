@@ -5,8 +5,24 @@
       "PackagePath": "staticwebassets\\TP06-Elecciones2023.bundle.scp.css"
     },
     {
+      "Id": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\BD_Elecciones.sql",
+      "PackagePath": "staticwebassets\\BD_Elecciones.sql"
+    },
+    {
+      "Id": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\IMG\\Thumbs.db",
+      "PackagePath": "staticwebassets\\IMG\\Thumbs.db"
+    },
+    {
+      "Id": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\IMG\\bandera Arg.png",
+      "PackagePath": "staticwebassets\\IMG\\bandera Arg.png"
+    },
+    {
       "Id": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\elecciones.webp",
+      "PackagePath": "staticwebassets\\elecciones.webp"
     },
     {
       "Id": "Z:\\PROGRAMACION2023\\TP06-ELECCIONES2023\\wwwroot\\favicon.ico",
